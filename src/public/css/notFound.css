@@ -1,0 +1,46 @@
+div#container{
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    background-image: url('/images/whatsapp.jpg');
+    position: relative;
+    animation: change 25s ease-in-out infinite;
+    height: 100vh;
+    padding-top: 5%;
+}
+
+div#borderLogo404{
+    border: 2px solid black; 
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 5%;
+    /*padding: 5%;*/
+    background-color: white;
+}
+
+h1#erro404{
+    color: tomato;
+    margin: revert;
+}
+
+h2#pageNotFound{
+    color: white;
+    font-size: 35px;
+}
+
+#btnHome{
+    margin: 20px auto;
+}
+
+@keyframes change{
+    0%{
+        background-position: top bottom;
+    }
+    50%{
+        background-position: bottom right;
+    }
+    100%{
+        background-position: right left;
+    }
+}

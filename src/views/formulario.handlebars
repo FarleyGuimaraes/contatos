@@ -1,0 +1,33 @@
+<script>
+
+    if ({{ id }} == '') {
+        document.querySelector('form').setAttribute('action', '/contatos/cadastro')
+    }else {
+        document.querySelector('form').setAttribute('action', `/contatos/atualizar/${{ id }}`)
+    }
+</script>
+
+<header id="cadastro">
+    <h1>Cadastro</h1>
+</header>
+
+<form action='' method='POST'>
+    <label for="nome">Nome completo</label>
+    <input type="text" name="nome" id="nome" value="{{contato.nome}}" placeholder="Ex.: Maria da Silva" required>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" value="{{contato.email}}" placeholder="Ex.: fulano@examplo.com" required>
+    <label for="celular">Celular</label>
+    <input 
+        type="tel" 
+        name="celular" 
+        id="celular"
+        value="{{contato.celular}}"
+        placeholder="Ex.: (00) 00000-0000"
+        data-mask="(00) 00000-0000"
+        maxlength="15" 
+        required>
+    <div id="btn">
+        <a href="/contatos" id="btnCancelar" class="btn btnHead">Cancelar</a>
+        <button type="submit" id="btnSalvar" class="btn btnHead" >Enviar</button>
+    </div>
+</form>

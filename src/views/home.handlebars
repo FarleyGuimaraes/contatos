@@ -1,0 +1,35 @@
+<header id="home">
+    <h1>Contatos</h1>
+    <a href="/contatos/cadastro" id="btnNovo" class="btn btnHead">Novo</a>
+</header>
+<section>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Celular</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each contatos}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{nome}}</td>
+                <td>{{email}}</td>
+                <td>{{celular}}</td>
+                <td id="tdAcoes">
+                    <a href="/contatos/atualizar/{{id}}" id="btnAlterar" class="btn btnBody">Alterar</a>
+                    <a href="/contatos/deletar/{{id}}" id="btnExcluir" class="btn btnBody">Excluir</a>
+                </td>
+
+            </tr>
+            {{/each}}
+        </tbody>
+
+
+    </table>
+</section>
