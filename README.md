@@ -20,7 +20,7 @@ Desenvolvido com a finalidade de estudos
 - Criar um database
 	- ``CREATE DATABASE nomeDataBase;``
 
-- Alterar o arquivo _'/src/models/db.js'_ e colocar os dados de configuração do seu banco de dado
+- Alterar o arquivo _'/src/models/db.js'_ e colocar os dados de configuração do seu banco de dados
 	- Dados que devem ser alterados
 		- ``database``
 		- ``user``
